@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    border-radius: 25px;
+    border: solid black;
+
+}
+
+.original{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chosen{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    margin: 30px;
+    background-color: green;
+    height: 30px;
+    width: 100px;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.reload{
+    background-color: black;
+}
