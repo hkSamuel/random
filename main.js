@@ -1,4 +1,4 @@
-let startNum;
+let startNum = 1;
 let endNum;
 let randomNum = 0;
 let haveIt = [];
@@ -32,11 +32,15 @@ function check(startNum, endNum){
 }
  function randomIt(startNum, endNum){
     let totalEle = endNum - startNum + 1;
-    randomNum = Math.floor(Math.random() * totalEle + startNum) + 1;
+    randomNum = Math.round(Math.random() * totalEle + startNum) + 1;
     ///alert("The random number is " + randomNum);
     if(!haveIt.includes(randomNum)) {
+        if (endNum >= randomNum && startNum <= randomNum){
         haveIt.push(randomNum);
         console.log(haveIt);
+        }else{
+            randomIt(startNum, endNum);
+        }
     }else if (randomNum === 0){
         randomIt(startNum, endNum);
     }else{
