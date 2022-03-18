@@ -16,7 +16,7 @@ const button = document.querySelector(".continue")
 // }
 
 function ask(){
-    startNum = prompt("This is random Number generator, Please type your starting Number", 1);
+    //startNum = prompt("This is random Number generator, Please type your starting Number", 1);
     endNum = prompt("Please type your ending Number", 10);
     check(startNum, endNum);
 }
